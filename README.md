@@ -1,2 +1,2 @@
 # JAVA-DataStructure
-JAVA数据结构
+数据结构
