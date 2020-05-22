@@ -6,12 +6,12 @@ import java.util.Queue;
 
 import javax.swing.tree.TreeNode;
 
-//´ÓÉÏÍùÏÂ´òÓ¡³ö¶ş²æÊ÷µÄÃ¿¸ö½Úµã£¬Í¬²ã½Úµã´Ó×óÖÁÓÒ´òÓ¡
+//ä»ä¸Šå¾€ä¸‹æ‰“å°å‡ºäºŒå‰æ ‘çš„æ¯ä¸ªèŠ‚ç‚¹ï¼ŒåŒå±‚èŠ‚ç‚¹ä»å·¦è‡³å³æ‰“å°
 
 /*public class TreeNode{
 	int val = 0;
-	TreeNode.left = null;
-	TreeNode.right = null;
+	TreeNode left = null;
+	TreeNode right = null;
 	
 	public TreeNode(int val) {
 		this.val = int val;
@@ -19,7 +19,7 @@ import javax.swing.tree.TreeNode;
 }*/
 
 /**
- * ÀûÓÃ¶ÓÁĞ½øĞĞ¶ş²æÊ÷µÄ¹ã¶ÈÓÅÏÈ±éÀú
+ * åˆ©ç”¨é˜Ÿåˆ—è¿›è¡ŒäºŒå‰æ ‘çš„å¹¿åº¦ä¼˜å…ˆéå†
  * 
  * @author ji
  *
