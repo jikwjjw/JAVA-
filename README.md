@@ -1,3 +1,5 @@
++ 树的特点：TreeFeatures.md
+------------------------------
 ```
 /*public class TreeNode{
 	int val = 0;
