@@ -3,13 +3,13 @@ package Tree;
 import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
 
 /**
- * ÊäÈëÒ»¸öÕûÊıÊı×é£¬ÅĞ¶Ï¸ÃÊı×éÊÇ²»ÊÇÄ³¶ş²æËÑË÷Ê÷µÄºóĞò±éÀúµÄ½á¹û¡£ Èç¹ûÊÇÔòÊä³öYes,·ñÔòÊä³öNo¡£ ¼ÙÉèÊäÈëµÄÊı×éµÄÈÎÒâÁ½¸öÊı×Ö¶¼»¥²»ÏàÍ¬¡£
+ * è¾“å…¥ä¸€ä¸ªæ•´æ•°æ•°ç»„ï¼Œåˆ¤æ–­è¯¥æ•°ç»„æ˜¯ä¸æ˜¯æŸäºŒå‰æœç´¢æ ‘çš„ååºéå†çš„ç»“æœã€‚ å¦‚æœæ˜¯åˆ™è¾“å‡ºYes,å¦åˆ™è¾“å‡ºNoã€‚ å‡è®¾è¾“å…¥çš„æ•°ç»„çš„ä»»æ„ä¸¤ä¸ªæ•°å­—éƒ½äº’ä¸ç›¸åŒã€‚
  * 
  * @author ji
  *
  */
 /*
- * public class TreeNode{ int val =0; TreeNode.left =null; TreeNode.right =null;
+ * public class TreeNode{ int val =0; TreeNode left =null; TreeNode right =null;
  * public TreeNode(int val) { this.val = val; } }
  */
 
@@ -25,13 +25,13 @@ public class VerifySquenceOfBST {
 		if(start >= end) return true;
 		int i = 0;
 		int root = sequence[end];
-		//ÕÒµ½×óÓÒ×ÓÊ÷µÄ·Ö½çµã
+		//æ‰¾åˆ°å·¦å³å­æ ‘çš„åˆ†ç•Œç‚¹
 		for (i = start; i < end; i++) {
 			if(sequence[i] > root){
 				break;
 			}
 		}
-		//ÔÚÓÒ×ÓÊ÷ÖĞÅĞ¶ÏÊÇ·ñº¬ÓĞĞ¡ÓÚrootµÄÖµ£¬Èç¹ûÓĞ·µ»Øfalse
+		//åœ¨å³å­æ ‘ä¸­åˆ¤æ–­æ˜¯å¦å«æœ‰å°äºrootçš„å€¼ï¼Œå¦‚æœæœ‰è¿”å›false
 		for(int j = i;j<end;j++){
 			if(sequence[j] < root){
 				return false;
