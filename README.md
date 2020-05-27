@@ -17,3 +17,5 @@
 + VerifySquenceOfBST: 二叉搜索树的后序遍历
 + PrintFromTopToBottom ：广度优先遍历
 + FindPath:树递归回溯,路径
++ IsBalanced_Solution：是否是平衡二叉树
++ TreeDepth：树的深度
