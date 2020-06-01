@@ -1,4 +1,4 @@
-+ [树的特点：TreeFeatures.md](https://www.cnblogs.com/onepixel/articles/7674659.html)
++ [树的特点：TreeFeatures.md](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/TreeFeatures.md)
 ------------------------------
 ```
 /*public class TreeNode{
