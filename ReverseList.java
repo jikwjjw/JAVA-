@@ -17,6 +17,7 @@ public class Solution {
             pre = head;//pre往右走
             head = p;//当前节点往右继续走
         }
+        
         return pre;//当循环结束时,pre所指的就是反转链表的头结点
     }
 }
