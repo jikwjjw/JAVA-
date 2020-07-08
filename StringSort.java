@@ -19,13 +19,13 @@ public class StringSort {
 					for (int j = 0; j < newResult.size(); j++) {
 						result.add(str.substring(0, 1) + newResult.get(j));
 					}
-					// ÓÃÍê»¹ÊÇÒª·Å»ØÈ¥µÄ
+					// ç”¨å®Œè¿˜æ˜¯è¦æ”¾å›žåŽ»çš„
 					temp = str.charAt(0);
 					str.setCharAt(0, str.charAt(i));
 					str.setCharAt(i, temp);
 				}
 			}
-			// ÐèÒªÔÚ×öÒ»¸öÅÅÐò²Ù×÷
+			// éœ€è¦åœ¨åšä¸€ä¸ªæŽ’åºæ“ä½œ
 			Collections.sort(result);
 		}
 		return result;
@@ -38,6 +38,7 @@ public class StringSort {
 		return result;
 	}
 
+	
 	public static void main(String[] args) {
 		String str = "abc";
 		StringSort sort = new StringSort();
