@@ -1,8 +1,5 @@
 package linknode;
 
-/**
- * ÊäÈëÒ»¿Ã¶ş²æËÑË÷Ê÷£¬½«¸Ã¶ş²æËÑË÷Ê÷×ª»»³ÉÒ»¸öÅÅĞòµÄË«ÏòÁ´±í¡£ÒªÇó²»ÄÜ´´½¨ÈÎºÎĞÂµÄ½áµã£¬Ö»ÄÜµ÷ÕûÊ÷ÖĞ½áµãÖ¸ÕëµÄÖ¸Ïò¡£
- */
 /*
 public class RandomListNode {
     int label;
@@ -20,11 +17,11 @@ public class Clone {
     {
         if (pHead == null) return null;
         HashMap<RandomListNode,RandomListNode> map = new HashMap<>();
-        //head ĞÂÁ´±íÍ·£¬Éî¿½±´£¬ĞèÒªnew
+        //head æ–°é“¾è¡¨å¤´ï¼Œæ·±æ‹·è´ï¼Œéœ€è¦new
         RandomListNode head = new RandomListNode(pHead.label);
-        //Ç³¿½±´¸ºÔğÑ­»·
+        //æµ…æ‹·è´è´Ÿè´£å¾ªç¯
         RandomListNode p = head;
-        //¾ÉÁ´±íÍ·
+        //æ—§é“¾è¡¨å¤´
         RandomListNode cur = pHead;
         while(pHead !=null){
             map.put(pHead,new RandomListNode(pHead.label));
