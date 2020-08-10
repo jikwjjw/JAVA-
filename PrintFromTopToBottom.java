@@ -14,7 +14,7 @@ import java.util.Queue;
 	TreeNode right = null;
 
 	public TreeNode(int val) {
-		this.val = int val;
+		this.val = val;
 	}
 }*/
 
