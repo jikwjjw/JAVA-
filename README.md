@@ -15,7 +15,7 @@
 + HasSubtree：是否含有子树结构
 + MirrorTree：树的镜像，采用递归和栈的方式
 + VerifySquenceOfBST: 二叉搜索树的后序遍历
-+ [广度优先遍历](https://github.com/jikwjjw/JAVA-DataStructure/edit/Tree/PrintFromTopToBottom.java) ：广度优先遍历
++ [广度优先遍历](https://github.com/jikwjjw/JAVA-DataStructure/edit/Tree/PrintFromTopToBottom.java)
 + FindPath:树递归回溯,路径
-+ [是否是平衡二叉树]:(https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/IsBalanced_Solution.java)是否是平衡二叉树
++ [是否是平衡二叉树]:(https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/IsBalanced_Solution.java)
 + TreeDepth：树的深度
