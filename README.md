@@ -17,5 +17,5 @@
 + VerifySquenceOfBST: 二叉搜索树的后序遍历
 + [PrintFromTopToBottom](https://github.com/jikwjjw/JAVA-DataStructure/edit/Tree/PrintFromTopToBottom.java) ：广度优先遍历
 + FindPath:树递归回溯,路径
-+ IsBalanced_Solution：是否是平衡二叉树
++ [IsBalanced_Solution]：(https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/IsBalanced_Solution.java)是否是平衡二叉树
 + TreeDepth：树的深度
