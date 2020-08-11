@@ -1,4 +1,4 @@
-package letcode;
+package letcode.tree;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -20,6 +20,7 @@ import java.util.Queue;
 
 /**
  * 利用队列进行二叉树的广度优先遍历
+ *
  * @author ji
  */
 public class PrintFromTopToBottom {
@@ -29,12 +30,10 @@ public class PrintFromTopToBottom {
         queue.offer(root);
         if (root == null) return alist;
         while (!queue.isEmpty()) {
-            for (int i = 0; i < queue.size(); i++) {
-                TreeNode temp = queue.poll();
-                alist.add(temp.val);
-                if (temp.left != null) queue.offer(temp.left);
-                if (temp.right != null) queue.offer(temp.right);
-            }
+            TreeNode temp = queue.poll();
+            alist.add(temp.val);
+            if (temp.left != null) queue.offer(temp.left);
+            if (temp.right != null) queue.offer(temp.right);
         }
         return alist;
     }
