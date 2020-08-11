@@ -38,9 +38,9 @@ public class PrintInfort {
      */
     private static void dfs(TreeNode root) {
         if (root == null) return;
+        list.add(root.val);
         dfs(root.left);
         dfs(root.right);
-        list.add(root.val);
     }
 
     public static void main(String[] args) {
