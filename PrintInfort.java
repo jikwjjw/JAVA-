@@ -3,6 +3,7 @@ package letcode.tree;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 /**
  * 二叉树的先序遍历
@@ -11,22 +12,21 @@ public class PrintInfort {
     static ArrayList<Integer> list = new ArrayList<>();
 
     /**
-     * 非递归方式
+     * 非递归方式(栈)
      *
      * @param root 根节点
      * @return 先序遍历的结果
      */
-    public static ArrayList<Integer> printInfort(TreeNode root) {
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        boolean flag = false;
-        while (!queue.isEmpty()) {
-            TreeNode temp = queue.poll();
-            if (temp != null) {
-                list.add(temp.val);
-                queue.offer(temp.left);
-                queue.offer(temp.right);
+    public static ArrayList<Integer> printStack(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        while (root != null || !stack.isEmpty()) {
+            while (root != null) {
+                list.add(root.val);
+                stack.push(root);
+                root = root.left;
             }
+            root = stack.pop();
+            root = root.right;
         }
         return list;
     }
@@ -55,6 +55,6 @@ public class PrintInfort {
         root2.left = root3;
         root2.right = root4;
 
-        System.out.println(printInfort(root));
+        System.out.println(printStack(root));
     }
 }
