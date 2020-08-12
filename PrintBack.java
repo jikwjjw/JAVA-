@@ -57,21 +57,20 @@ public class PrintBack {
         Stack<TreeNode> stack1 = new Stack<>();
         Stack<TreeNode> stack2 = new Stack<>();
         stack1.push(root);
-        TreeNode preNode;
         while (!stack1.isEmpty()) {
-            preNode = stack1.pop();
-            stack2.push(preNode);
-            if (preNode.left != null) {
-                stack1.push(preNode.left);
+            root = stack1.pop();
+            stack2.push(root);
+            if (root.left != null) {
+                stack1.push(root.left);
             }
-            if (preNode.right != null) {
-                stack1.push(preNode.right);
+            if (root.right != null) {
+                stack1.push(root.right);
             }
         }
 
         while (!stack2.isEmpty()) {
-            preNode = stack2.pop();
-            list.add(preNode.val);
+            root = stack2.pop();
+            list.add(root.val);
         }
         return list;
     }
