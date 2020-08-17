@@ -3,3 +3,4 @@
 + [给定一个正整数 n（1 ≤ n ≤ 30），输出外观数列的第 n 项。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/CountAndSay.java):递归，双指针
 + [给定两个以字符串形式表示的非负整数 num1 和 num2，返回 num1 和 num2 的乘积，它们的乘积也表示为字符串形式。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/Multiply.java)
 + [给定两个字符串形式的非负整数 num1 和num2 ，计算它们的和。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/AddStrings.java)
++ [给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/Subsets.java)
