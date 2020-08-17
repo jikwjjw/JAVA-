@@ -10,17 +10,17 @@ import java.util.Queue;
  */
 public class LevelOrder {
     /**
-     *     3
-     *    / \
-     *   9  20
-     *     /  \
-     *    15   7
+     * 3
+     * / \
+     * 9  20
+     * /  \
+     * 15   7
+     *
      * @param root
-     * @return
-     * [
-     *   [3],
-     *   [9,20],
-     *   [15,7]
+     * @return [
+     * [3],
+     * [9,20],
+     * [15,7]
      * ]
      */
     public List<List<Integer>> levelOrder(TreeNode root) {
@@ -57,6 +57,56 @@ public class LevelOrder {
                 }
             }
             result.add(middle);
+        }
+        return result;
+    }
+
+    /**
+     *
+     * 之字形遍历
+     *     3
+     *    / \
+     *   9  20
+     *     /  \
+     *    15   7
+     *
+     * @param root
+     * @return
+     *
+     * [
+     *   [3],
+     *   [20,9],
+     *   [15,7]
+     * ]
+     */
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        if (root == null) {
+            return new ArrayList<>();
+        }
+        List<List<Integer>> result = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        boolean flag = true;
+        while (!queue.isEmpty()) {
+            List<Integer> list = new ArrayList<>();
+            int num = queue.size();
+            for (int i = 0; i < num; i++) {
+                TreeNode node = queue.poll();
+                if (flag) {
+                    list.add(node.val);
+                } else {
+                    list.add(0, node.val);
+                }
+
+                if (node.left != null) {
+                    queue.add(node.left);
+                }
+                if (node.right != null) {
+                    queue.add(node.right);
+                }
+            }
+            flag = !flag;
+            result.add(list);
         }
         return result;
     }
