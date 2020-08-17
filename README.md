@@ -1,6 +1,6 @@
 + [树的特点：TreeFeatures.md](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/TreeFeatures.md)
 + [二叉树广度优先遍历](https://github.com/jikwjjw/JAVA-DataStructure/edit/Tree/PrintFromTopToBottom.java) ：递归和非递归
-+ [二叉树的层序遍历](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/LevelOrder.java)
++ [二叉树的层序遍历](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/LevelOrder.java):层序遍历和之字形遍历
 + [二叉树先序遍历](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/PrintInfort.java)
 + [二叉树中序遍历](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/PrintInfmedim.java)
 + [二叉树后序遍历](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/PrintBack.java)
