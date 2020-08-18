@@ -25,3 +25,4 @@
 + [给定一个整数 n，生成所有由 1 ... n 为节点所组成的 二叉搜索树 。](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/GenerateTrees.java)
 + TreeDepth：树的深度
 + [验证二叉搜索树](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/IsValidBST.java)
++ [有序链表转换二叉搜索树](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/SortedListToBST.java)
