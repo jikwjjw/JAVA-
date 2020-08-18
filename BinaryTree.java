@@ -1,50 +1,40 @@
-package test;
-
+package letcode.tree;
 /**
- * Definition for binary tree
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
+ * å…³é”®æ˜¯ï¼šåˆ©ç”¨å‰åºåºåˆ—æ ¹èŠ‚ç‚¹åœ¨å‰æ‰¾åˆ°æ ¹èŠ‚ç‚¹ï¼Œ
+ * ç”¨æ ¹èŠ‚ç‚¹å»ä¸­åºåºåˆ—åˆ’åˆ†æˆä¸¤éƒ¨åˆ†ï¼Œå·¦éƒ¨åˆ†æ˜¯å·¦å­æ ‘ï¼Œå³éƒ¨åˆ†æ˜¯å³å­æ ‘ã€‚
+ * å†åˆ©ç”¨å­æ ‘é•¿åº¦å»å‰åºåºåˆ—æŠŠå‰åºåºåˆ—ä¸­çš„å·¦å³å­æ ‘æ‰¾å‡ºæ¥ï¼ŒåŒæ—¶å¯ä»¥æ‰¾å‡ºæ ¹èŠ‚ç‚¹ã€‚
+ * é€’å½’è¿›è¡Œæ­¤æ­¥éª¤ï¼Œå¦‚æœå­æ ‘é•¿åº¦ä¸º0ï¼Œåˆ™ä¸éœ€è¦ç”Ÿæˆå­é—®é¢˜ã€‚
  */
 
-/**
- * ¹Ø¼üÊÇ£ºÀûÓÃÇ°ĞòĞòÁĞ¸ù½ÚµãÔÚÇ°ÕÒµ½¸ù½Úµã£¬
- * ÓÃ¸ù½ÚµãÈ¥ÖĞĞòĞòÁĞ»®·Ö³ÉÁ½²¿·Ö£¬×ó²¿·ÖÊÇ×ó×ÓÊ÷£¬ÓÒ²¿·ÖÊÇÓÒ×ÓÊ÷¡£
- * ÔÙÀûÓÃ×ÓÊ÷³¤¶ÈÈ¥Ç°ĞòĞòÁĞ°ÑÇ°ĞòĞòÁĞÖĞµÄ×óÓÒ×ÓÊ÷ÕÒ³öÀ´£¬Í¬Ê±¿ÉÒÔÕÒ³ö¸ù½Úµã¡£
- * µİ¹é½øĞĞ´Ë²½Öè£¬Èç¹û×ÓÊ÷³¤¶ÈÎª0£¬Ôò²»ĞèÒªÉú³É×ÓÎÊÌâ¡£
- */
 
-/**
-     * µİ¹éºÍ¶ş·ÖË¼Ïë£¬½«ÎÊÌâ²»¶Ï»®·Ö£¬Ö±µ½ÎÊÌâÈİÒ×½â¾ö¡£
-     * ×ö·¨ÊÇ£º¶ÔÓÚÒ»¸ö¸ù½Úµã£¬ÏÈÈ¥ÖĞĞòĞòÁĞÖĞÕÒµ½¸ù½ÚµãµÄÖµËùÔÚÎ»ÖÃ£¬ÀûÓÃÕâ¸öÎ»ÖÃ·Ö³É2²¿·Ö£¬×ó²¿·ÖµÄÖĞĞòĞòÁĞ³¤¶È¼´ÎªÇ°ĞòĞòÁĞÖĞ×ó²¿·ÖµÄÖĞĞòĞòÁĞ³¤¶È£¬ÓÒ²¿·ÖÒàÈ»¡£
-     * È»ºó¿ªÊ¼Éú³É×ÓÎÊÌâ£¬Èç¹ûĞòÁĞ³¤¶ÈÎª0Ôò²»ĞèÒªÉú³É×ÓÎÊÌâ¡£·ñÔò£ºÀûÓÃÇ°ĞòĞòÁĞµÚÒ»¸öÔªËØÎª¸ù½ÚµãµÄĞÔÖÊÉú³É¸ù½Úµã£¬È»ºó¹¹Ôì×ÓÎÊÌâ¡£
-     * @param root ¸ù½Úµã
-     * @param pre Ç°ĞòĞòÁĞ ·¶Î§ÊÇ[pleft,pright)
-     * @param in ÖĞĞòĞòÁĞ ·¶Î§ÊÇ[ileft,iright)
+public class BuildTree {
+    /**
+     * é€’å½’å’ŒäºŒåˆ†æ€æƒ³ï¼Œå°†é—®é¢˜ä¸æ–­åˆ’åˆ†ï¼Œç›´åˆ°é—®é¢˜å®¹æ˜“è§£å†³ã€‚
+     * åšæ³•æ˜¯ï¼šå¯¹äºä¸€ä¸ªæ ¹èŠ‚ç‚¹ï¼Œå…ˆå»ä¸­åºåºåˆ—ä¸­æ‰¾åˆ°æ ¹èŠ‚ç‚¹çš„å€¼æ‰€åœ¨ä½ç½®ï¼Œåˆ©ç”¨è¿™ä¸ªä½ç½®åˆ†æˆ2éƒ¨åˆ†ï¼Œå·¦éƒ¨åˆ†çš„ä¸­åºåºåˆ—é•¿åº¦å³ä¸ºå‰åºåºåˆ—ä¸­å·¦éƒ¨åˆ†çš„ä¸­åºåºåˆ—é•¿åº¦ï¼Œå³éƒ¨åˆ†äº¦ç„¶ã€‚
+     * ç„¶åå¼€å§‹ç”Ÿæˆå­é—®é¢˜ï¼Œå¦‚æœåºåˆ—é•¿åº¦ä¸º0åˆ™ä¸éœ€è¦ç”Ÿæˆå­é—®é¢˜ã€‚å¦åˆ™ï¼šåˆ©ç”¨å‰åºåºåˆ—ç¬¬ä¸€ä¸ªå…ƒç´ ä¸ºæ ¹èŠ‚ç‚¹çš„æ€§è´¨ç”Ÿæˆæ ¹èŠ‚ç‚¹ï¼Œç„¶åæ„é€ å­é—®é¢˜ã€‚
+     *
+     * @param root æ ¹èŠ‚ç‚¹
+     * @param preorder  å‰åºåºåˆ— èŒƒå›´æ˜¯[pleft,pright)
+     * @param inorder   ä¸­åºåºåˆ— èŒƒå›´æ˜¯[ileft,iright)
      */
-public class BinaryTree {
-	public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
-        TreeNode root = new TreeNode(pre[0]);
-        
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        return buildTreeHelper(preorder, 0, preorder.length, inorder, 0, inorder.length);
     }
-    public void build(TreeNode root, int[] pre, int pleft, int pright, int[] in, int ileft, int iright){
-        int i;
-        for(int i = ileft;i<irigth;i++){
-            if(in[i] == root.val){
+
+    private TreeNode buildTreeHelper(int[] preorder, int p_start, int p_end, int[] inorder, int i_start, int i_end) {
+        if (p_start == p_end) return null;
+        int root_val = preorder[p_start];
+        TreeNode root = new TreeNode(root_val);
+        int i_root_index = 0;
+        for (int i = p_start; i < p_end; i++) {
+            if (root_val == preorder[i]) {
+                i_root_index = i;
                 break;
             }
         }
-        int t = i - ileft; 
-        if (t > 0) {//×ÓÊ÷³¤¶ÈÎª0Ê±²»±ØÉú³É×ÓÎÊÌâ
-            root.left = new TreeNode(pre[pleft + 1]);
-            build(root.left, pre, pleft + 1, pleft + 1 + t, in, ileft, i);
-        }
-
-        if (pright - pleft - 1 - t > 0) {
-            root.right = new TreeNode(pre[pleft + 1 + t]);
-            build(root.right, pre, pleft + 1 + t, pright, in, i + 1, iright);
+        int left_num = i_root_index - i_start;
+        root.left = buildTreeHelper(preorder, p_start + 1, p_start + 1 + left_num, inorder, i_start, i_root_index);
+        root.right = buildTreeHelper(preorder, p_start + 1 + left_num, p_end, inorder, i_root_index + 1, i_end);
+        return root;
     }
 }
