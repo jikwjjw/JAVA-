@@ -27,3 +27,4 @@
 + [二叉树最小深度](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/MinDepth.java)
 + [验证二叉搜索树](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/IsValidBST.java)
 + [有序链表转换二叉搜索树](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/SortedListToBST.java)
++ [给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和。](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/HasPathSum.java)
