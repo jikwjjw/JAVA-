@@ -30,3 +30,4 @@
 + [给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和。](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/HasPathSum.java)
 + [二叉树展开为链表](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/Flatten.java)
 + [二叉树中的最大路径和](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/MaxPathSum.java)
++ [二叉树到各叶子结点的路径](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/SumNumbers.java)
