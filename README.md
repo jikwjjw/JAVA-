@@ -4,4 +4,4 @@
 + [给定两个以字符串形式表示的非负整数 num1 和 num2，返回 num1 和 num2 的乘积，它们的乘积也表示为字符串形式。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/Multiply.java)
 + [给定两个字符串形式的非负整数 num1 和num2 ，计算它们的和。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/AddStrings.java)
 + [给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/Subsets.java)
-+ [分割回文串,给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。]()
++ [分割回文串,给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/Partition.java)
