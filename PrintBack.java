@@ -1,8 +1,7 @@
 package letcode.tree;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 二叉树的后序遍历
@@ -25,7 +24,7 @@ public class PrintBack {
                 root = root.left;
             }
             boolean flag = true;
-            TreeNode preNode = null;//前驱节点
+            TreeNode preNode = null;
             while (!stack.isEmpty() && flag == true) {
                 root = stack.peek();
                 if (root.right == preNode) {
@@ -75,6 +74,27 @@ public class PrintBack {
         return list;
     }
 
+    /**
+     * 后序遍历2
+     *
+     * @param root
+     * @return
+     */
+    public static List<Integer> postorderTraversal(TreeNode root) {
+        LinkedList<Integer> result = new LinkedList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        while (root != null || !stack.isEmpty()) {
+            if (root != null) {
+                stack.push(root);
+                result.addFirst(root.val);
+                root = root.right;
+            } else {
+                root = stack.pop();
+                root = root.left;
+            }
+        }
+        return result;
+    }
 
     /**
      * 递归方式
@@ -100,6 +120,6 @@ public class PrintBack {
         root2.left = root3;
         root2.right = root4;
 
-        System.out.println(printDoubleStack(root));
+        System.out.println(postorderTraversal(root));
     }
 }
