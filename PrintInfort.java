@@ -32,6 +32,31 @@ public class PrintInfort {
     }
 
     /**
+     * 先序遍历2
+     *
+     * @param root
+     * @return
+     */
+    public static ArrayList<Integer> printStack1(TreeNode root) {
+        if (root == null) {
+            return list;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            list.add(Integer.valueOf(node.val));
+            if (node.right != null) {
+                stack.push(node.right);
+            }
+            if (node.left != null) {
+                stack.push(node.left);
+            }
+        }
+        return list;
+    }
+
+    /**
      * 递归方式
      *
      * @param root
