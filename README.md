@@ -35,3 +35,4 @@ currentNode = currentNode.next;
 + [环形链表](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/DetectCycle.java)
 + [重排链表,给定链表 1->2->3->4, 重新排列为 1->4->2->3.](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/ReorderList.java):双端队列 和 快慢指针，链表反转
 + [对链表进行插入排序](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/InsertionSortList.java)：两个结点的交换
++ [归并排序链表](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/SortList.java)
