@@ -8,3 +8,4 @@
 + [给定一个非空字符串 s 和一个包含非空单词列表的字典 wordDict，判定 s 是否可以被空格拆分为一个或多个在字典中出现的单词。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/WordBreak.java)
 + [翻转字符串里的单词](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/ReverseWords.java) : 双指针
 + [给定一个正整数，返回它在 Excel 表中相对应的列名称。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/ConvertToTitle.java)
++ [多数元素](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/MajorityElement.java):摩尔投票法
