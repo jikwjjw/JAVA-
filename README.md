@@ -33,3 +33,4 @@ currentNode = currentNode.next;
 + [反转从位置 m 到 n 的链表。请使用一趟扫描完成反转。](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/reverseBetween.java)
 + [链表的深拷贝](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/CopyRandomList.java)
 + [环形链表](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/DetectCycle.java)
++ [重排链表,给定链表 1->2->3->4, 重新排列为 1->4->2->3.](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/ReorderList.java):双端队列 和 快慢指针，链表反转
