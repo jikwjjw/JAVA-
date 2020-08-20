@@ -37,3 +37,4 @@ currentNode = currentNode.next;
 + [对链表进行插入排序](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/InsertionSortList.java)：两个结点的交换
 + [归并排序链表](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/SortList.java)
 + [快速排序链表](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/QuickSortList.java)
++ [相交节点](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/GetIntersectionNode.java)
