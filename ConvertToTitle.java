@@ -33,6 +33,25 @@ public class ConvertToTitle {
         return sb.reverse().toString();
     }
 
+    /**
+     * 输入: "A"
+     * 输出: 1
+     * <p>
+     * 输入: "ZY"
+     * 输出: 701
+     *
+     * @param s
+     * @return
+     */
+    public static int convertToTitle1(String s) {
+        int ans = 0;
+        for (int i = 0; i < s.length(); i++) {
+            int num = s.charAt(i) - 'A' + 1;
+            ans = ans * 26 + num;
+        }
+        return ans;
+    }
+
     public static void main(String[] args) {
         System.out.println(convertToTitle(701));
     }
