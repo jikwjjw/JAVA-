@@ -6,3 +6,4 @@
 + [给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/Subsets.java)
 + [分割回文串,给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/Partition.java)
 + [给定一个非空字符串 s 和一个包含非空单词列表的字典 wordDict，判定 s 是否可以被空格拆分为一个或多个在字典中出现的单词。](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/WordBreak.java)
++ [翻转字符串里的单词](https://github.com/jikwjjw/JAVA-DataStructure/blob/String/ReverseWords.java) : 双指针
