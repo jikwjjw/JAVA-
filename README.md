@@ -18,7 +18,7 @@
 ---------------------------------------
 + [BinaryTree:根据前序和中序遍历结果，构建树](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/BinaryTree.java)
 + HasSubtree：是否含有子树结构
-+ MirrorTree：树的镜像，采用递归和栈的方式
++ [MirrorTree：树的镜像，采用递归和栈的方式](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/MirrorTree.java)
 + VerifySquenceOfBST: 二叉搜索树的后序遍历
 + [FindPath:树递归回溯,路径](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/FindPath.java)
 + [是否是平衡二叉树](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/IsBalanced_Solution.java)
