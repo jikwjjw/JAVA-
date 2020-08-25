@@ -38,3 +38,4 @@ currentNode = currentNode.next;
 + [归并排序链表](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/SortList.java)
 + [快速排序链表](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/QuickSortList.java)
 + [相交节点](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/GetIntersectionNode.java)
++ [回文链表](https://github.com/jikwjjw/JAVA-DataStructure/blob/LinkNode/IsPalindrome.java)
