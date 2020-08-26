@@ -36,3 +36,4 @@
 + [树的路径](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/FindPath.java)
 + [树的路径III](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/PathSumIII.java)
 + [二叉搜索树转换为累加树](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/ConvertBST.java)
++ [二叉树的直径](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/DiameterOfBinaryTree.java)
