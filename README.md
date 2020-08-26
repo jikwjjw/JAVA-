@@ -32,4 +32,4 @@
 + [二叉树中的最大路径和](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/MaxPathSum.java)
 + [二叉树到各叶子结点的路径](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/SumNumbers.java)
 + [翻转二叉树](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/InvertTree.java)
-+ [二叉树的最近公共祖先](https://github.com/jikwjjw/JAVA-DataStructure/tree/Tree)
++ [二叉树的最近公共祖先](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/LowestCommonAncestor.java)
