@@ -35,3 +35,4 @@
 + [二叉树的最近公共祖先](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/LowestCommonAncestor.java)
 + [树的路径](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/FindPath.java)
 + [树的路径III](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/PathSumIII.java)
++ [二叉搜索树转换为累加树](https://github.com/jikwjjw/JAVA-DataStructure/blob/Tree/ConvertBST.java)
