@@ -49,7 +49,6 @@ public class PrintFromTopToBottom {
         root.right = root2;
         root2.left = root3;
         root2.right = root4;
-
         System.out.println(printFromTopToBottom(root));
     }
 }
